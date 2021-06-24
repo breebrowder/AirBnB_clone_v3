@@ -8,6 +8,12 @@ from flask_cors import CORS, cross_origin
 
 
 app = Flask(__name__)
+cors = CORS(app, resources={r"/*": {"origins": '0.0.0.0'}})
+app.register_blueprint(app_views, url_prefix='/api/v1')
+""" Flask app has global config object that is accessed through app.config """
+app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
+""" jsonify responses will be output with newlines, spaces, and indentation """
+""" helps with easier reading for humans """
 
 
 @app.teardown_appcontext
