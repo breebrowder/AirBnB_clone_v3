@@ -8,12 +8,6 @@ from flask_cors import CORS, cross_origin
 
 
 app = Flask(__name__)
-cors = CORS(app, resources={r"/*": {"origins": '0.0.0.0'}})
-app.register_blueprint(app_views, url_prefix='/api/v1')
-""" Flask app has global config object that is accessed through app.config """
-app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
-""" jsonify responses will be output with newlines, spaces, and indentation """
-""" helps with easier reading for humans """
 
 
 @app.teardown_appcontext
@@ -33,6 +27,6 @@ if __name__ == "__main__":
     realport = getenv('HBNB_API_PORT')
     if host is None:
         host = '0.0.0.0'
-    if port is None:
-        port = '5000'
-    app.run(host=host, port=realport, threaded=True)
+    if realport is None:
+        realport = '5000'
+    app.run(debug=True, host=host, port=realport, threaded=True)
