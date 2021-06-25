@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 """ Setup API, import, register blueprint, declare methods, run server """
-from flask import Flask, render_template, Blueprint, jsonify
+from flask import Flask, escape, request, render_template, Blueprint, jsonify
 from models import storage
 from api.v1.views import app_views
 from os import getenv
 
 
 app = Flask(__name__)
+app.register_blueprint(app_views, url_prefix='/api/v1')
 
 
 @app.teardown_appcontext
