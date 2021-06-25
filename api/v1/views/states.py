@@ -59,7 +59,7 @@ def put_states_id(state_id):
     if obj is None:
         abort(404)
     if state is None:
-        abort(400, "NOt a JSON")
+        abort(400, "Not a JSON")
     for key, value in state.items():
         if key not in ['id', 'created_at', 'updated_at']:
             setattr(obj, key, vlaue)
