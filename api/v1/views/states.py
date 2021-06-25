@@ -62,6 +62,6 @@ def put_states_id(state_id):
         abort(400, "Not a JSON")
     for key, value in state.items():
         if key not in ['id', 'created_at', 'updated_at']:
-            setattr(obj, key, vlaue)
+            setattr(obj, key, value)
     obj.save()
     return jsonify(obj.to_dict()), 200
