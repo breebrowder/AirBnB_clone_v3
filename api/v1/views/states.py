@@ -7,7 +7,7 @@ from models.state import State
 import json
 
 
-@app_views.routw('/states', methods=['GET'])
+@app_views.route('/states', methods=['GET'])
 def states():
     """ Get list of all state objects """
     theList = []
