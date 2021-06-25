@@ -48,6 +48,8 @@ def post_cities_id(state_id):
     if state is None:
         abort(404)
     city = request.get_json()
+    if not city:
+        abort(400, "Not a JSON")
     if 'name' not in city:
         abort(400, "Missing name")
     city['state_id'] = state_id
@@ -57,7 +59,7 @@ def post_cities_id(state_id):
     return(city_var.to_dict()), 201
 
 
-@app_views.route('/states/<city_id>', methods=['PUT'])
+@app_views.route('/cities/<city_id>', methods=['PUT'])
 def put_cities_id(city_id):
     """ Return city with new status code """
     obj = storage.get(City, city_id)
