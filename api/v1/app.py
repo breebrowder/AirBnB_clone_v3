@@ -7,7 +7,10 @@ from os import getenv
 
 
 app = Flask(__name__)
+cors = CORS(app, resources={r"/*": {"origins": "0.0.0.0"}})
 app.register_blueprint(app_views, url_prefix='/api/v1')
+app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
+""" makes output easier to read for humans, default false """
 
 
 @app.teardown_appcontext
