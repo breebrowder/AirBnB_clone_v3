@@ -39,7 +39,7 @@ def delete_id(amenity_id):
 
 
 @app_views.route('/amenities/', methods=['POST'])
-def post_amenities_id(state_id):
+def post_amenities_id():
     """ Return amenity with new status code """
     amenity = request.get_json()
     if not amenity:
