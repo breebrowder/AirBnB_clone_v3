@@ -9,7 +9,7 @@ from models.amenity import Amenity
 import json
 
 
-@app_views.route('/amenites')
+@app_views.route('/amenities')
 def amenities():
     """ Will retrieve all amenities """
     theList = []
