@@ -41,9 +41,6 @@ def delete_id(amenity_id):
 @app_views.route('/amenities/', methods=['POST'])
 def post_amenities_id(state_id):
     """ Return amenity with new status code """
-    state = storage.get(State, state_id)
-    if state is None:
-        abort(404)
     amenity = request.get_json()
     if not amenity:
         abort(400, "Not a JSON")
@@ -56,7 +53,7 @@ def post_amenities_id(state_id):
 
 
 @app_views.route('/amenities/<amenity_id>', methods=['PUT'])
-def put_amen_id(city_id):
+def put_amen_id(amenity_id):
     """ Return amenity with new status code """
     obj = storage.get(Amenity, amenity_id)
     if obj is None:
