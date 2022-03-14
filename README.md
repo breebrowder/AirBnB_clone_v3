@@ -1,4 +1,7 @@
-# AirBnB Clone - The Console
+# AirBnB Clone - RESTful API
+
+[Project Link: RESTful API](https://intranet.hbtn.io/projects/301)
+
 The console is the first segment of the AirBnB project at Holberton School that will collectively cover fundamental concepts of higher level programming. The goal of AirBnB project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). A command interpreter is created in this segment to manage objects for the AirBnB(HBnB) website.
 
 #### Functionalities of this command interpreter:
@@ -158,9 +161,28 @@ Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twit
 Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
 
 ## Additional Contributors to Codebase
-Bree Browder - [GitHub](https://github.com/breezybrow)
-Hector Lozano - [GitHub](https://github.com/HLozano12)
+1. Bree Browder - [GitHub](https://github.com/breebrowder)
+2. Hector Lozano - [GitHub](https://github.com/HLozano12)
 
 Second part of Airbnb: Joann Vuong
+
+# About the Developer  💬
+
+### Bree Browder
+
+Bree is known for her creativity, organization, and self awareness. Advances in technology have played an integral part in her life. As an empathy-driven problem solver, Bree wants to be at the forefront of design for products, and to continuously design with others in mind, especially those who tend to be marginalized or forgotten.
+
+### Follow Me
+
+- 📁 [LinkedIn](https://www.linkedin.com/in/breebrowder/)
+- ✍️ [Medium](https://medium.com/@breebrowder)
+- 🖥️ [Portfolio Website](https://breebrowder.github.io)
+
+### Email Me
+📩: browder.bree@gmail.com
+
+
+#### Please Note: Some links may be internal and inaccessible to the general public outside of Holberton School students.
+
 ## License
 Public Domain. No copy write protection.
